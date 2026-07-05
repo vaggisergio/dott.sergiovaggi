@@ -32,6 +32,7 @@ module.exports = {
           400: '#2FBFA4',
           500: '#22A08A',
           600: '#1B8071',
+          700: '#146a5d',
           DEFAULT: '#2FBFA4',
           light: '#7ED9C7',
         },

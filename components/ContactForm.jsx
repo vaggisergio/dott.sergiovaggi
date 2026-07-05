@@ -168,7 +168,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={stato === 'invio'}
-        className="inline-flex w-full items-center justify-center rounded-full bg-aqua-accent px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-colors hover:bg-aqua-accent-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-accent-600 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
+        className="inline-flex w-full items-center justify-center rounded-full bg-aqua-accent-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-colors hover:bg-aqua-accent-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-accent-700 disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
       >
         {stato === 'invio' ? 'Invio in corso…' : 'Invia richiesta di visita'}
       </button>

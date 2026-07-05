@@ -177,7 +177,7 @@ export default function PatologiePage() {
 
               <Link
                 href="/contatti/"
-                className="mt-8 inline-flex items-center justify-center rounded-full bg-aqua-accent px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-aqua-accent-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-accent-600"
+                className="mt-8 inline-flex items-center justify-center rounded-full bg-aqua-accent-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-aqua-accent-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-accent-700"
               >
                 Richiedi una visita per {patologia.titoloBreve.toLowerCase()}
               </Link>
@@ -197,7 +197,7 @@ export default function PatologiePage() {
           </p>
           <Link
             href="/contatti/"
-            className="mt-8 inline-flex items-center justify-center rounded-full bg-aqua-accent px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-colors hover:bg-aqua-accent-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-accent-600"
+            className="mt-8 inline-flex items-center justify-center rounded-full bg-aqua-accent-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-colors hover:bg-aqua-accent-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-accent-700"
           >
             Prenota una valutazione biomeccanica
           </Link>

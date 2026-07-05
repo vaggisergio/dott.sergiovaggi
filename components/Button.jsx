@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const variantClasses = {
   primary:
-    'bg-aqua-accent text-white hover:bg-aqua-accent-600 focus-visible:outline-aqua-accent-600',
+    'bg-aqua-accent-600 text-white hover:bg-aqua-accent-700 focus-visible:outline-aqua-accent-700',
   secondary:
     'bg-medical-blue-800 text-white hover:bg-medical-blue-900 focus-visible:outline-medical-blue-900',
   outline:
