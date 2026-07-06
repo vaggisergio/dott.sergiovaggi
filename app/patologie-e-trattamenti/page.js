@@ -40,8 +40,8 @@ const dettagli = {
   'protesi-caviglia': {
     corpo: [
       "L'artrosi avanzata di caviglia è spesso conseguenza di traumi distorsivi o fratture pregresse. Per anni l'unica soluzione chirurgica affidabile è stata l'artrodesi (il blocco definitivo dell'articolazione), efficace sul dolore ma a costo della mobilità.",
-      'La protesi totale di caviglia rappresenta oggi un\'alternativa che permette di eliminare il dolore conservando il movimento articolare. Il Dott. Vaggi ha eseguito il primo impianto in Liguria di protesi totale di caviglia con sistema personalizzato 3D, pianificato sull\'anatomia specifica del paziente.',
-      "Quando una protesi già impiantata si usura o si mobilizza, può rendersi necessario un intervento di revisione: il Dott. Vaggi ha eseguito anche il primo impianto di revisione protesica della tibiotarsica in Liguria, un intervento tecnicamente complesso riservato a centri con esperienza specifica.",
+      'La protesi totale di caviglia rappresenta oggi un\'alternativa che permette di eliminare il dolore conservando il movimento articolare, pianificata sull\'anatomia specifica del paziente con sistema personalizzato 3D. Il Dott. Vaggi ha eseguito il primo impianto in Liguria di protesi totale e di revisione di caviglia con questo sistema.',
+      "Quando una protesi già impiantata si usura o si mobilizza, può rendersi necessario un intervento di revisione: un intervento tecnicamente complesso, riservato a centri con esperienza specifica su questo tipo di chirurgia.",
     ],
     quando: [
       'Dolore cronico di caviglia dopo traumi o fratture pregresse',
@@ -52,13 +52,14 @@ const dettagli = {
   'piede-caviglia': {
     corpo: [
       'Il piede e la caviglia sono strutture complesse, sottoposte a carichi elevati a ogni passo: alluce valgo, instabilità legamentose croniche, tendinopatie e deformità post-traumatiche sono tra i motivi di consulto più frequenti.',
-      'Molte di queste condizioni possono essere trattate con tecniche mininvasive percutanee, che riducono le cicatrici, il dolore post-operatorio e i tempi di recupero rispetto alla chirurgia open tradizionale, pur restando indicate solo nei casi selezionati.',
+      "A seconda del caso, queste condizioni vengono trattate con tecniche mininvasive percutanee — che riducono cicatrici, dolore post-operatorio e tempi di recupero — oppure con chirurgia open tradizionale, quando è quest'ultima a offrire il risultato più affidabile: la scelta della tecnica segue sempre le caratteristiche specifiche del paziente, non un protocollo unico.",
       "L'instabilità cronica di caviglia, spesso esito di distorsioni ripetute e mai adeguatamente trattate, viene valutata con un esame clinico mirato per stabilire se sia sufficiente un percorso riabilitativo o se sia necessaria una stabilizzazione chirurgica dei legamenti.",
+      "Un ambito a parte è la chirurgia di salvataggio: quando un precedente intervento al piede o alla caviglia, eseguito altrove, non ha dato l'esito sperato, è spesso possibile intervenire nuovamente per correggere il problema e recuperare una funzione soddisfacente. Per la chirurgia del piede mi confronto inoltre con il Dott. Belfiore, in un lavoro d'équipe che permette di condividere le strategie più adatte ai casi più complessi.",
     ],
     quando: [
       "Alluce valgo doloroso che limita la scelta delle calzature e il cammino",
       'Distorsioni di caviglia ricorrenti con sensazione di cedimento',
-      "Dolore persistente da tendinopatia non risolto con la sola fisioterapia",
+      "Esito insoddisfacente di un precedente intervento al piede o alla caviglia",
     ],
   },
   'medicina-rigenerativa': {

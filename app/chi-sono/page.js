@@ -1,10 +1,11 @@
+import Image from 'next/image'
 import CTASection from '@/components/CTASection'
 import { dottore } from '@/lib/data'
 
 export const metadata = {
   title: 'Chi Sono | Percorso, Formazione ed Esperienza',
   description:
-    'Il percorso formativo e professionale del Dott. Sergio Vaggi: specializzazione con lode a Genova, collaborazione con l\'équipe del Dott. Andrea Camera, attività scientifica e filosofia clinica centrata sul paziente.',
+    'Il percorso formativo e professionale del Dott. Sergio Vaggi: collaborazioni con il Dott. Andrea Camera per la chirurgia protesica e con il Dott. Belfiore per la chirurgia del piede, attività scientifica e filosofia clinica centrata sul paziente.',
   alternates: { canonical: '/chi-sono/' },
 }
 
@@ -27,7 +28,7 @@ const tappe = [
   {
     titolo: 'Primati chirurgici in Liguria',
     descrizione:
-      'Primo impianto in Liguria di protesi totale di caviglia con sistema personalizzato 3D e primo intervento di revisione protesica della tibiotarsica in regione.',
+      'Primo impianto in Liguria di protesi totale e di revisione di caviglia con sistema personalizzato 3D.',
   },
   {
     titolo: 'Attività scientifica continuativa',
@@ -84,12 +85,14 @@ export default function ChiSonoPage() {
           </div>
 
           <div className="lg:col-span-4">
-            <div
-              className="flex aspect-square w-full max-w-xs mx-auto items-center justify-center rounded-3xl bg-medical-blue-800 text-6xl font-serif font-semibold text-white shadow-md lg:max-w-none"
-              role="img"
-              aria-label="Ritratto del Dott. Sergio Vaggi (foto in aggiornamento)"
-            >
-              SV
+            <div className="mx-auto aspect-[3/4] w-full max-w-xs overflow-hidden rounded-3xl shadow-md lg:max-w-none">
+              <Image
+                src="/images/vaggi-kmedical.jpg"
+                alt="Ritratto del Dott. Sergio Vaggi"
+                width={800}
+                height={1200}
+                className="h-full w-full object-cover object-top"
+              />
             </div>
           </div>
         </div>
@@ -153,24 +156,56 @@ export default function ChiSonoPage() {
         </div>
       </section>
 
-      {/* COLLABORAZIONE ÉQUIPE DOTT. CAMERA */}
+      {/* COLLABORAZIONI D'ÉQUIPE */}
       <section className="bg-medical-blue-50">
         <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-semibold text-medical-blue-900">
-            Un lavoro d&apos;équipe: la collaborazione con il Dott. Andrea Camera
+            Un lavoro d&apos;équipe
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-neutral-700">
-            La chirurgia protesica e la traumatologia complessa richiedono un confronto costante
-            tra specialisti. Per questo motivo affianco la mia attività alla collaborazione con
-            l&apos;équipe del Dott. Andrea Camera, un lavoro condiviso che permette di discutere i
-            casi più complessi, confrontare le strategie chirurgiche e garantire ai pazienti un
-            secondo punto di vista clinico qualificato prima di ogni intervento importante.
-          </p>
-          <p className="mt-4 text-lg leading-relaxed text-neutral-700">
-            Questo approccio di squadra si estende anche al percorso post-operatorio e
-            riabilitativo, per accompagnare il paziente con continuità dalla sala operatoria al
-            pieno recupero funzionale.
-          </p>
+          <div className="mt-10 grid gap-10 lg:grid-cols-5 lg:items-center">
+            <div className="lg:col-span-3">
+              <h3 className="font-serif text-xl font-semibold text-medical-blue-900">
+                Chirurgia protesica: la collaborazione con il Dott. Andrea Camera
+              </h3>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-700">
+                La chirurgia protesica e la traumatologia complessa richiedono un confronto
+                costante tra specialisti. Per questo motivo affianco la mia attività alla
+                collaborazione con l&apos;équipe del Dott. Andrea Camera, un lavoro condiviso che
+                permette di discutere i casi più complessi, confrontare le strategie chirurgiche
+                e garantire ai pazienti un secondo punto di vista clinico qualificato prima di
+                ogni intervento importante.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-700">
+                Questo approccio di squadra si estende anche al percorso post-operatorio e
+                riabilitativo, per accompagnare il paziente con continuità dalla sala operatoria
+                al pieno recupero funzionale.
+              </p>
+            </div>
+            <div className="lg:col-span-2">
+              <div className="mx-auto aspect-[4/3] w-full max-w-sm overflow-hidden rounded-3xl shadow-md">
+                <Image
+                  src="/images/vaggi-miodottore.jpg"
+                  alt="Dott. Sergio Vaggi durante un intervento chirurgico"
+                  width={220}
+                  height={220}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-14 border-t border-medical-blue-100 pt-10">
+            <h3 className="font-serif text-xl font-semibold text-medical-blue-900">
+              Chirurgia del piede: la collaborazione con il Dott. Belfiore
+            </h3>
+            <p className="mt-4 max-w-3xl text-lg leading-relaxed text-neutral-700">
+              Allo stesso modo, per la chirurgia del piede e della caviglia mi confronto con il
+              Dott. Belfiore: un lavoro d&apos;équipe che, come nella collaborazione protesica con
+              il Dott. Camera, permette di condividere le strategie chirurgiche più adatte a ogni
+              caso, in particolare nelle situazioni più complesse o negli interventi di
+              salvataggio dopo il fallimento di chirurgie precedenti.
+            </p>
+          </div>
         </div>
       </section>
 
