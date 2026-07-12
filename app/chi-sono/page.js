@@ -5,7 +5,7 @@ import { dottore } from '@/lib/data'
 export const metadata = {
   title: 'Chi Sono | Percorso, Formazione ed Esperienza',
   description:
-    'Il percorso formativo e professionale del Dott. Sergio Vaggi: collaborazioni con il Dott. Andrea Camera per la chirurgia protesica e con il Dott. Belfiore per la chirurgia del piede, attività scientifica e filosofia clinica centrata sul paziente.',
+    'Il percorso formativo e professionale del Dott. Sergio Vaggi: collaborazioni con il Dott. Belfiore per la chirurgia del piede e con il Dott. Andrea Camera per la chirurgia protesica, attività scientifica e filosofia clinica centrata sul paziente.',
   alternates: { canonical: '/chi-sono/' },
 }
 
@@ -99,11 +99,6 @@ const relazioniCongressi = [
       "Osteotomia di medializzazione del calcagno per la correzione del piede piatto acquisito dell'adulto — review di letteratura",
     congresso: 'Congresso nazionale SIOT, sezione Piede e Caviglia',
     dove: 'Roma, novembre 2022',
-  },
-  {
-    titolo: 'Fratture instabili di metacarpo: sintesi con vite in compressione e fissatore esterno',
-    congresso: 'Congresso nazionale SICM, sezione trauma',
-    dove: 'Genova, ottobre 2023',
   },
   {
     titolo: 'La conversione da DCO a sintesi definitiva',
@@ -366,20 +361,13 @@ export default function ChiSonoPage() {
           <div className="mt-10 grid gap-10 lg:grid-cols-5 lg:items-center">
             <div className="lg:col-span-3">
               <h3 className="font-serif text-xl font-semibold text-medical-blue-900">
-                Chirurgia protesica: la collaborazione con il Dott. Andrea Camera
+                Chirurgia del piede: la collaborazione con il Dott. Belfiore
               </h3>
               <p className="mt-4 text-lg leading-relaxed text-neutral-700">
-                La chirurgia protesica e la traumatologia complessa richiedono un confronto
-                costante tra specialisti. Per questo motivo affianco la mia attività alla
-                collaborazione con l&apos;équipe del Dott. Andrea Camera, un lavoro condiviso che
-                permette di discutere i casi più complessi, confrontare le strategie chirurgiche
-                e garantire ai pazienti un secondo punto di vista clinico qualificato prima di
-                ogni intervento importante.
-              </p>
-              <p className="mt-4 text-lg leading-relaxed text-neutral-700">
-                Questo approccio di squadra si estende anche al percorso post-operatorio e
-                riabilitativo, per accompagnare il paziente con continuità dalla sala operatoria
-                al pieno recupero funzionale.
+                Per la chirurgia del piede e della caviglia mi confronto con il Dott. Belfiore:
+                un lavoro d&apos;équipe che permette di condividere le strategie chirurgiche più
+                adatte a ogni caso, in particolare nelle situazioni più complesse o negli
+                interventi di salvataggio dopo il fallimento di chirurgie precedenti.
               </p>
             </div>
             <div className="lg:col-span-2">
@@ -397,14 +385,15 @@ export default function ChiSonoPage() {
 
           <div className="mt-14 border-t border-medical-blue-100 pt-10">
             <h3 className="font-serif text-xl font-semibold text-medical-blue-900">
-              Chirurgia del piede: la collaborazione con il Dott. Belfiore
+              Chirurgia protesica: la collaborazione con il Dott. Andrea Camera
             </h3>
             <p className="mt-4 max-w-3xl text-lg leading-relaxed text-neutral-700">
-              Allo stesso modo, per la chirurgia del piede e della caviglia mi confronto con il
-              Dott. Belfiore: un lavoro d&apos;équipe che, come nella collaborazione protesica con
-              il Dott. Camera, permette di condividere le strategie chirurgiche più adatte a ogni
-              caso, in particolare nelle situazioni più complesse o negli interventi di
-              salvataggio dopo il fallimento di chirurgie precedenti.
+              Allo stesso modo, la chirurgia protesica e la traumatologia complessa richiedono
+              un confronto costante tra specialisti: affianco la mia attività alla
+              collaborazione con l&apos;équipe del Dott. Andrea Camera, un lavoro condiviso che
+              permette di discutere i casi più complessi, confrontare le strategie chirurgiche e
+              garantire ai pazienti un secondo punto di vista clinico qualificato prima di ogni
+              intervento importante, fino al percorso post-operatorio e riabilitativo.
             </p>
           </div>
         </div>

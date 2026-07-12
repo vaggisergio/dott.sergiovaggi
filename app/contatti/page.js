@@ -8,10 +8,7 @@ export const metadata = {
   alternates: { canonical: '/contatti/' },
 }
 
-const orari = [
-  { giorni: 'Lunedì – Venerdì', orario: '9:00 – 18:30' },
-  { giorni: 'Sabato', orario: 'Su appuntamento' },
-]
+const orari = [{ giorni: 'Lunedì – Venerdì', orario: '9:00 – 18:30' }]
 
 export default function ContattiPage() {
   return (

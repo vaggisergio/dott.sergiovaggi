@@ -21,7 +21,7 @@ export const metadata = {
     'chirurgo ortopedico Genova',
     'protesi anca Genova',
     'protesi ginocchio Genova',
-    'specialista protesi caviglia Genova',
+    'protesi caviglia Genova',
     'chirurgia piede e caviglia Genova',
     'ortopedico Finale Ligure',
     'ortopedico Voltri',

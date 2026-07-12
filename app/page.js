@@ -30,8 +30,8 @@ export default function HomePage() {
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-700">
               Il Dott. Sergio Vaggi affianca i pazienti con dolori articolari e muscolari
               all&apos;arto inferiore in un percorso chiaro: dalla diagnosi accurata alle
-              soluzioni conservative, fino alla chirurgia protesica più avanzata di anca,
-              ginocchio e caviglia, quando è davvero necessaria.
+              soluzioni conservative, fino alla chirurgia protesica di anca, ginocchio e
+              caviglia, quando è davvero necessaria.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Button href="/contatti/" variant="primary">
@@ -42,8 +42,8 @@ export default function HomePage() {
               </Button>
             </div>
             <p className="mt-6 text-sm text-neutral-500">
-              Visite a Genova (Voltri, Sampierdarena, Centro) e a Finale Ligure, anche in
-              convenzione con il Servizio Sanitario Nazionale.
+              Visite private a Genova (Voltri, Sampierdarena, Centro) e a Finale Ligure.
+              Interventi chirurgici anche in convenzione con il Servizio Sanitario Nazionale.
             </p>
           </div>
 
@@ -96,14 +96,14 @@ export default function HomePage() {
           <div>
             <p className="font-serif text-4xl font-semibold text-white">4</p>
             <p className="mt-2 text-sm text-medical-blue-100">
-              Sedi di ricevimento tra Genova e Finale Ligure, anche in convenzione SSN
+              Sedi di ricevimento privato tra Genova e Finale Ligure
             </p>
           </div>
           <div>
-            <p className="font-serif text-4xl font-semibold text-white">2</p>
+            <p className="font-serif text-4xl font-semibold text-white">3</p>
             <p className="mt-2 text-sm text-medical-blue-100">
-              Collaborazioni specialistiche dedicate: chirurgia protesica con il Dott. Camera,
-              chirurgia del piede con il Dott. Belfiore
+              Strutture ospedaliere per interventi chirurgici anche in convenzione con il
+              Servizio Sanitario Nazionale
             </p>
           </div>
         </div>
