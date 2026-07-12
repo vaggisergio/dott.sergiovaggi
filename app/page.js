@@ -5,6 +5,7 @@ import CTASection from '@/components/CTASection'
 import PatologiaCard from '@/components/PatologiaCard'
 import SedeCard from '@/components/SedeCard'
 import { patologie, sedi, primati } from '@/lib/data'
+import { recensioni } from '@/lib/recensioni'
 
 export const metadata = {
   title: 'Chirurgo Ortopedico a Genova | Protesi Anca, Ginocchio, Caviglia',
@@ -153,6 +154,32 @@ export default function HomePage() {
           >
             Vedi indirizzi, mappe e orari di ogni sede
           </Link>
+        </div>
+      </section>
+
+      {/* RECENSIONI */}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-serif text-3xl font-semibold text-medical-blue-900">
+            Le parole dei pazienti
+          </h2>
+          <p className="mt-4 text-lg text-neutral-600">Una selezione delle recensioni ricevute.</p>
+        </div>
+        <div className="mt-12 columns-1 gap-6 sm:columns-2 lg:columns-3">
+          {recensioni.map((recensione) => (
+            <div
+              key={recensione.nome}
+              className="mb-6 break-inside-avoid overflow-hidden rounded-2xl border border-medical-blue-100 shadow-sm"
+            >
+              <Image
+                src={recensione.file}
+                alt={recensione.alt}
+                width={recensione.width}
+                height={recensione.height}
+                className="h-auto w-full"
+              />
+            </div>
+          ))}
         </div>
       </section>
 

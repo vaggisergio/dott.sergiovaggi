@@ -61,6 +61,10 @@ const dettagli = {
       'Distorsioni di caviglia ricorrenti con sensazione di cedimento',
       "Esito insoddisfacente di un precedente intervento al piede o alla caviglia",
     ],
+    articoloCorrelato: {
+      slug: 'patologie-del-piede-e-della-caviglia',
+      titolo: 'Le patologie del piede e della caviglia più frequenti',
+    },
   },
   'medicina-rigenerativa': {
     corpo: [
@@ -176,12 +180,22 @@ export default function PatologiePage() {
                 </div>
               </div>
 
-              <Link
-                href="/contatti/"
-                className="mt-8 inline-flex items-center justify-center rounded-full bg-aqua-accent-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-aqua-accent-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-accent-700"
-              >
-                Richiedi una visita per {patologia.titoloBreve.toLowerCase()}
-              </Link>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  href="/contatti/"
+                  className="inline-flex items-center justify-center rounded-full bg-aqua-accent-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-aqua-accent-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua-accent-700"
+                >
+                  Richiedi una visita per {patologia.titoloBreve.toLowerCase()}
+                </Link>
+                {dettaglio.articoloCorrelato && (
+                  <Link
+                    href={`/blog/${dettaglio.articoloCorrelato.slug}/`}
+                    className="inline-flex items-center justify-center rounded-full border-2 border-medical-blue-800 px-6 py-3 text-sm font-semibold text-medical-blue-800 transition-colors hover:bg-medical-blue-50"
+                  >
+                    Leggi: {dettaglio.articoloCorrelato.titolo}
+                  </Link>
+                )}
+              </div>
             </div>
           </section>
         )

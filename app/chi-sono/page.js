@@ -33,7 +33,7 @@ const tappe = [
   {
     titolo: 'Attività scientifica continuativa',
     descrizione:
-      'Relatore a congressi nazionali e internazionali di ortopedia e autore di pubblicazioni scientifiche, per mantenere un aggiornamento costante sulle tecniche più efficaci.',
+      'Relatore a congressi nazionali di ortopedia e autore di pubblicazioni scientifiche, per mantenere un aggiornamento costante sulle tecniche più efficaci.',
   },
 ]
 
