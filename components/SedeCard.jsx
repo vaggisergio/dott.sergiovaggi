@@ -74,6 +74,17 @@ export default function SedeCard({ sede, variante = 'sintesi' }) {
           Vedi la mappa
           <span className="sr-only"> di {sede.nome} (si apre in una nuova scheda)</span>
         </a>
+        {sede.sitoWeb && (
+          <a
+            href={sede.sitoWeb}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-1 rounded-full border border-medical-blue-200 px-4 py-2 text-sm font-semibold text-medical-blue-800 transition-colors hover:bg-medical-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-medical-blue-800"
+          >
+            Visita il sito
+            <span className="sr-only"> di {sede.struttura} (si apre in una nuova scheda)</span>
+          </a>
+        )}
       </div>
     </div>
   )
