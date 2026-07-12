@@ -1,4 +1,4 @@
-const siteUrl = 'https://www.sergiovaggi.it'
+const siteUrl = 'https://dott-sergiovaggi.vercel.app'
 
 export default function robots() {
   return {

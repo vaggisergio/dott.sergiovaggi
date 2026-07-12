@@ -1,6 +1,6 @@
 import { articoli } from '@/lib/blog'
 
-const siteUrl = 'https://www.sergiovaggi.it'
+const siteUrl = 'https://dott-sergiovaggi.vercel.app'
 
 export default function sitemap() {
   const pagine = [

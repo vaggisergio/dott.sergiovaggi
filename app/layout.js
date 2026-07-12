@@ -2,11 +2,15 @@ import { Inter, Lora } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { dottore, sedi } from '@/lib/data'
 
 const inter = Inter({ variable: '--font-inter', subsets: ['latin'], display: 'swap' })
 const lora = Lora({ variable: '--font-lora', subsets: ['latin'], display: 'swap' })
 
-const siteUrl = 'https://www.sergiovaggi.it'
+// NOTA: aggiornare con il dominio definitivo quando disponibile
+// (es. dopo l'acquisto di un dominio .it), sia qui sia su
+// Vercel/Google Search Console/Google Business.
+const siteUrl = 'https://dott-sergiovaggi.vercel.app'
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
@@ -40,26 +44,28 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
-const jsonLd = {
+// Un blocco JSON-LD per ciascuna sede: aiuta Google a collegare le
+// singole Schede Google Business (una per sede) al sito e tra loro.
+const jsonLd = sedi.map((sede) => ({
   '@context': 'https://schema.org',
   '@type': 'Physician',
-  name: 'Dott. Sergio Vaggi',
+  name: dottore.nome,
   medicalSpecialty: 'Orthopedic',
   description:
     "Specialista in Ortopedia e Traumatologia. Chirurgia protesica dell'arto inferiore, chirurgia del piede e della caviglia, medicina rigenerativa.",
-  url: siteUrl,
+  url: `${siteUrl}/dove-trovarmi/#${sede.id}`,
+  telephone: sede.telefonoHref || undefined,
   areaServed: ['Genova', 'Finale Ligure', 'Liguria'],
-  address: [
-    {
-      '@type': 'PostalAddress',
-      streetAddress: "Via Sant'Ambrogio 27/1",
-      addressLocality: 'Genova',
-      addressRegion: 'Liguria',
-      postalCode: '16158',
-      addressCountry: 'IT',
-    },
-  ],
-}
+  address: {
+    '@type': 'PostalAddress',
+    name: sede.struttura,
+    streetAddress: sede.indirizzo,
+    addressLocality: sede.citta,
+    postalCode: /^\d/.test(sede.cap) ? sede.cap.split(' ')[0] : undefined,
+    addressRegion: 'Liguria',
+    addressCountry: 'IT',
+  },
+}))
 
 export default function RootLayout({ children }) {
   return (
