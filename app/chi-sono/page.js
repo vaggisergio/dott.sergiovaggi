@@ -96,7 +96,7 @@ const capitoliLibro = [
 const relazioniCongressi = [
   {
     titolo:
-      "Osteotomia di medializzazione del calcagno mininvasiva per la correzione del piede piatto acquisito dell'adulto — review di letteratura",
+      "Osteotomia di medializzazione del calcagno per la correzione del piede piatto acquisito dell'adulto — review di letteratura",
     congresso: 'Congresso nazionale SIOT, sezione Piede e Caviglia',
     dove: 'Roma, novembre 2022',
   },
@@ -106,13 +106,13 @@ const relazioniCongressi = [
     dove: 'Genova, ottobre 2023',
   },
   {
-    titolo: 'Il terzo distale di tibia',
-    congresso: 'Congresso regionale SIFE — "La conversione da DCO a sintesi definitiva"',
+    titolo: 'La conversione da DCO a sintesi definitiva',
+    congresso: 'Congresso regionale SIFE',
     dove: 'Genova, maggio 2024',
   },
   {
-    titolo: 'Fratture piatto tibiale',
-    congresso: 'Congresso interregionale SPLLOT — "Non successi a medio e lungo termine"',
+    titolo: 'Non successi a medio termine delle sintesi articolari — il piatto tibiale',
+    congresso: 'Congresso interregionale SPLLOT',
     dove: 'Torino, settembre 2024',
   },
   {
@@ -124,6 +124,23 @@ const relazioniCongressi = [
     titolo: 'Fallimenti di sintesi articolari, quando sostituire e quando re-sintetizzare — caviglia e piede',
     congresso: 'Congresso regionale ALIOTO',
     dove: 'Genova, settembre 2025',
+  },
+  {
+    titolo: 'I traumi di caviglia e piede: i meccanismi del trauma',
+    congresso: 'Corso SPLLOT — Università di Genova',
+    dove: 'Genova, maggio 2026',
+  },
+  {
+    titolo: 'Progression of flatfoot into adulthood: diagnosis, treatment, and outcomes',
+    congresso:
+      'Congresso internazionale "The Child\'s Foot 2026" — Visiting Professorship in Pediatric Orthopedics, Istituto Giannina Gaslini',
+    dove: 'Genova, giugno 2026',
+  },
+  {
+    titolo: 'Cavus foot evolution in adulthood: diagnosis, treatment and outcomes',
+    congresso:
+      'Congresso internazionale "The Child\'s Foot 2026" — Visiting Professorship in Pediatric Orthopedics, Istituto Giannina Gaslini',
+    dove: 'Genova, giugno 2026',
   },
 ]
 
@@ -228,9 +245,8 @@ export default function ChiSonoPage() {
             Attività scientifica
           </h2>
           <p className="mt-4 max-w-3xl text-lg text-neutral-600">
-            Pubblicazioni su riviste scientifiche, capitoli di libro e relazioni a congressi
-            nazionali, a testimonianza di un aggiornamento continuo condiviso con la comunità
-            ortopedica.
+            Pubblicazioni su riviste scientifiche, capitoli di libro e relazioni a congressi, a
+            testimonianza di un aggiornamento continuo condiviso con la comunità ortopedica.
           </p>
 
           <div className="mt-10 grid gap-8 lg:grid-cols-2">
@@ -278,7 +294,7 @@ export default function ChiSonoPage() {
 
             <div>
               <h3 className="font-serif text-lg font-semibold text-medical-blue-900">
-                Relazioni a congressi nazionali
+                Relazioni a congressi
               </h3>
               <ul className="mt-4 space-y-4">
                 {relazioniCongressi.map((rel) => (
