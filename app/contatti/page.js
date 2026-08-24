@@ -1,10 +1,10 @@
-import ContactForm from '@/components/ContactForm'
+import BookingWidget from '@/components/BookingWidget'
 import { dottore, sedi } from '@/lib/data'
 
 export const metadata = {
   title: 'Contatti e Richiesta Visita | Prenota una Visita Ortopedica',
   description:
-    'Richiedi una visita ortopedica con il Dott. Sergio Vaggi a Genova o Finale Ligure: compila il form o contattaci telefonicamente. Ti ricontattiamo per confermare data, orario e sede.',
+    'Prenota una visita ortopedica con il Dott. Sergio Vaggi a Genova o Finale Ligure: scegli online data, orario e sede, oppure contattaci telefonicamente.',
   alternates: { canonical: '/contatti/' },
 }
 
@@ -22,8 +22,8 @@ export default function ContattiPage() {
             Richiedi la tua visita
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-neutral-700">
-            Compila il form con qualche informazione sul tuo problema: ti ricontattiamo per
-            proporti data, orario e sede più comoda per te, a Genova o a Finale Ligure.
+            Prenota direttamente online scegliendo data, orario e sede più comoda per te, a
+            Genova o a Finale Ligure.
           </p>
         </div>
       </section>
@@ -33,14 +33,13 @@ export default function ContattiPage() {
           <div className="lg:col-span-3">
             <div className="rounded-3xl border border-medical-blue-100 bg-white p-6 shadow-md sm:p-8">
               <h2 className="font-serif text-xl font-semibold text-medical-blue-900">
-                Form di richiesta visita
+                Prenota una visita online
               </h2>
               <p className="mt-2 text-sm text-neutral-600">
-                Non è un sistema di prenotazione automatica: la richiesta viene gestita
-                personalmente e riceverai una conferma via telefono o email.
+                Il calendario mostra le disponibilità reali ed è gestito tramite MioDottore.
               </p>
               <div className="mt-6">
-                <ContactForm />
+                <BookingWidget />
               </div>
             </div>
           </div>

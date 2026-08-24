@@ -31,13 +31,12 @@ Il sito sarà visibile su http://localhost:3000
 
 ## Prima di andare online
 
-- [ ] Verificare regime (SSN/privato/assicurativo) per ogni sede in `lib/data.js` (e per le strutture chirurgiche)
-- [ ] Sostituire numeri di telefono mancanti (Genova Centro, Finale Ligure) in `lib/data.js`
-- [ ] Aggiungere foto professionali reali (l'avatar in Chi Sono è un placeholder con le iniziali "SV")
-- [ ] Creare un form su [Formspree](https://formspree.io) e impostare `NEXT_PUBLIC_FORMSPREE_ID` (vedi `components/ContactForm.jsx`)
-- [ ] Verificare/aggiornare il dominio reale in `siteUrl` (`app/layout.js`, `app/sitemap.js`, `app/robots.js`)
-- [ ] Far rivedere il testo di consenso GDPR nel form da un legale/DPO prima della pubblicazione
-- [ ] Popolare i 3 articoli del blog con contenuti definitivi o aggiungerne di nuovi in `lib/blog.js`
+- [x] Regime (SSN/privato/assicurativo) per ogni sede verificato in `lib/data.js`
+- [x] Numeri di telefono di tutte le sedi inseriti in `lib/data.js`
+- [x] Foto professionali reali in Home e Chi Sono
+- [x] Prenotazione online tramite widget MioDottore (`components/BookingWidget.jsx`) al posto del form
+- [ ] Se si acquista un dominio proprio, aggiornare `siteUrl` in `app/layout.js`, `app/sitemap.js`, `app/robots.js` (attualmente punta a `dott-sergiovaggi.vercel.app`) e ricollegarlo su Vercel
+- [ ] Popolare i 3 articoli originali del blog con contenuti definitivi, se si vuole personalizzarli ulteriormente
 - [ ] Test responsive su mobile reale (non solo emulatore)
 
 ## Verifiche già effettuate in questo repository
