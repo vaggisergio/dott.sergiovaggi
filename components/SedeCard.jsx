@@ -1,9 +1,15 @@
+import { dottore, miodottoreUrl } from '@/lib/data'
+
 /**
  * Card sede, usata in Home (variante "sintesi") e in Dove Trovarmi
  * (variante "completa", con parcheggio/mezzi/attività e mappa).
  */
 export default function SedeCard({ sede, variante = 'sintesi' }) {
   const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(sede.mapsQuery)}`
+  // Il numero personale del Dott. Vaggi si mostra solo nella pagina
+  // Contatti: qui, per le sedi che lo condividono, si rimanda a
+  // MioDottore per la prenotazione.
+  const numeroPersonale = sede.telefono && sede.telefono === dottore.telefono
 
   return (
     <div id={sede.id} className="flex h-full flex-col rounded-2xl border border-medical-blue-100 bg-white p-6 shadow-sm">
@@ -52,7 +58,17 @@ export default function SedeCard({ sede, variante = 'sintesi' }) {
       )}
 
       <div className="mt-5 flex flex-1 flex-col justify-end gap-2">
-        {sede.telefono && sede.telefonoHref && (
+        {numeroPersonale && (
+          <a
+            href={miodottoreUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full border-2 border-medical-blue-800 px-4 py-2 text-sm font-semibold text-medical-blue-800 transition-colors hover:bg-medical-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-medical-blue-800"
+          >
+            Prenota su MioDottore
+          </a>
+        )}
+        {!numeroPersonale && sede.telefono && sede.telefonoHref && (
           <a
             href={`tel:${sede.telefonoHref}`}
             className="inline-flex items-center justify-center rounded-full border-2 border-medical-blue-800 px-4 py-2 text-sm font-semibold text-medical-blue-800 transition-colors hover:bg-medical-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-medical-blue-800"
@@ -60,10 +76,15 @@ export default function SedeCard({ sede, variante = 'sintesi' }) {
             Chiama {sede.telefono}
           </a>
         )}
-        {!sede.telefono && (
-          <p className="text-center text-xs text-neutral-500">
-            Telefono non disponibile: usa il form di richiesta visita.
-          </p>
+        {!numeroPersonale && !sede.telefono && (
+          <a
+            href={miodottoreUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center text-xs font-semibold text-medical-blue-800 underline"
+          >
+            Prenota su MioDottore
+          </a>
         )}
         <a
           href={mapsHref}

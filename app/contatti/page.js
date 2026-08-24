@@ -86,13 +86,21 @@ export default function ContattiPage() {
 
               <div className="rounded-2xl border border-medical-blue-100 bg-white p-6 shadow-sm">
                 <h2 className="font-serif text-lg font-semibold text-medical-blue-900">Sedi</h2>
-                <ul className="mt-4 space-y-2 text-sm text-neutral-700">
+                <ul className="mt-4 space-y-3 text-sm text-neutral-700">
                   {sedi.map((sede) => (
                     <li key={sede.id}>
-                      <span className="font-semibold text-medical-blue-900">{sede.nome}</span>
+                      <span className="font-semibold text-medical-blue-900">{sede.struttura}</span>
                       <span className="block text-neutral-600">
                         {sede.indirizzo}, {sede.cap}
                       </span>
+                      {sede.telefono && (
+                        <a
+                          href={`tel:${sede.telefonoHref}`}
+                          className="block text-medical-blue-800 hover:underline"
+                        >
+                          {sede.telefono}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>
