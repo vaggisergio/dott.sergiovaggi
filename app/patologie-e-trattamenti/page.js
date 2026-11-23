@@ -40,7 +40,7 @@ const dettagli = {
   'protesi-caviglia': {
     corpo: [
       "L'artrosi avanzata di caviglia è spesso conseguenza di traumi distorsivi o fratture pregresse. Per anni l'unica soluzione chirurgica affidabile è stata l'artrodesi (il blocco definitivo dell'articolazione), efficace sul dolore ma a costo della mobilità.",
-      'La protesi totale di caviglia rappresenta oggi un\'alternativa che permette di eliminare il dolore conservando il movimento articolare, pianificata sull\'anatomia specifica del paziente con sistema personalizzato 3D. Il Dott. Vaggi ha eseguito il primo impianto in Liguria di protesi totale e di revisione di caviglia con questo sistema.',
+      'La protesi totale di caviglia rappresenta oggi un\'alternativa che permette di eliminare il dolore conservando il movimento articolare, pianificata sull\'anatomia specifica del paziente con sistema personalizzato paziente specifico (PSI). Il Dott. Vaggi ha eseguito il primo impianto in Liguria di protesi totale e di revisione di caviglia con questo sistema.',
       "Quando una protesi già impiantata si usura o si mobilizza, può rendersi necessario un intervento di revisione: un intervento tecnicamente complesso, riservato a centri con esperienza specifica su questo tipo di chirurgia.",
     ],
     quando: [

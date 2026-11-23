@@ -28,7 +28,7 @@ const tappe = [
   {
     titolo: 'Primati chirurgici in Liguria',
     descrizione:
-      'Primo impianto in Liguria di protesi totale e di revisione di caviglia con sistema personalizzato 3D.',
+      'Primo impianto in Liguria di protesi totale e di revisione di caviglia con sistema personalizzato paziente specifico (PSI).',
   },
   {
     titolo: 'Dirigente Medico e attività chirurgica',
