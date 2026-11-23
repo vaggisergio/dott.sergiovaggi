@@ -3,9 +3,9 @@ import SedeCard from '@/components/SedeCard'
 import { sedi, struttureChirurgiche } from '@/lib/data'
 
 export const metadata = {
-  title: 'Dove Trovarmi | Sedi a Genova (Voltri, Sampierdarena) e Finale Ligure',
+  title: 'Dove Trovarmi | Sedi a Genova (Voltri, Sampierdarena, Centro)',
   description:
-    'Le sedi di visita del Dott. Sergio Vaggi: Genova Voltri, Genova Sampierdarena, Genova Centro (K Medical Albaro) e Finale Ligure (Nova Medica Finalese). Indirizzi, mappe, parcheggio e regime di accesso.',
+    'Le sedi di visita del Dott. Sergio Vaggi: Genova Voltri, Genova Sampierdarena e Genova Centro (K Medical Albaro). Indirizzi, mappe, parcheggio e regime di accesso.',
   alternates: { canonical: '/dove-trovarmi/' },
 }
 
@@ -19,10 +19,10 @@ export default function DoveTrovarmiPage() {
             Dove trovarmi
           </p>
           <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight text-medical-blue-900 sm:text-5xl">
-            Visite a Genova e Finale Ligure
+            Visite a Genova
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-neutral-700">
-            Ricevo a Genova Voltri, Genova Sampierdarena, Genova Centro e a Finale Ligure.
+            Ricevo a Genova Voltri, Genova Sampierdarena e Genova Centro.
             Ogni sede è pensata per essere raggiungibile facilmente, con indicazioni pratiche
             su parcheggio e mezzi pubblici.
           </p>
@@ -40,7 +40,7 @@ export default function DoveTrovarmiPage() {
           Sanitario Nazionale, vedi le strutture ospedaliere più sotto.
         </p>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-2">
+        <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {sedi.map((sede) => (
             <div key={sede.id} className="flex flex-col gap-4">
               <SedeCard sede={sede} variante="completa" />

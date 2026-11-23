@@ -12,7 +12,7 @@ export default function Footer() {
           <p className="mt-1 text-sm text-medical-blue-200">{dottore.titolo}</p>
           <p className="mt-4 text-sm leading-relaxed text-medical-blue-200">
             Chirurgia protesica dell&apos;arto inferiore, chirurgia del piede e della caviglia
-            e medicina rigenerativa, a Genova e Finale Ligure.
+            e medicina rigenerativa, a Genova.
           </p>
         </div>
 

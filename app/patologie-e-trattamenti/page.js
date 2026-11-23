@@ -95,7 +95,7 @@ export default function PatologiePage() {
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-neutral-700">
             Ogni area di trattamento nasce da una valutazione clinica accurata: qui trovi una
             spiegazione chiara di come vengono affrontate le principali patologie di anca,
-            ginocchio, piede e caviglia a Genova e Finale Ligure.
+            ginocchio, piede e caviglia a Genova.
           </p>
         </div>
 

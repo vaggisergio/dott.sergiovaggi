@@ -10,7 +10,7 @@ import { recensioni } from '@/lib/recensioni'
 export const metadata = {
   title: 'Chirurgo Ortopedico a Genova | Protesi Anca, Ginocchio, Caviglia',
   description:
-    'Dott. Sergio Vaggi, specialista in Ortopedia e Traumatologia a Genova e Finale Ligure: chirurgia protesica di anca, ginocchio e caviglia, chirurgia del piede e medicina rigenerativa. Richiedi una visita.',
+    'Dott. Sergio Vaggi, specialista in Ortopedia e Traumatologia a Genova: chirurgia protesica di anca, ginocchio e caviglia, chirurgia del piede e medicina rigenerativa. Richiedi una visita.',
   alternates: { canonical: '/' },
 }
 
@@ -22,7 +22,7 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:items-center lg:py-24 lg:px-8">
           <div className="lg:col-span-7">
             <p className="text-sm font-semibold uppercase tracking-wide text-aqua-accent-600">
-              Specialista in Ortopedia e Traumatologia · Genova e Finale Ligure
+              Specialista in Ortopedia e Traumatologia · Genova
             </p>
             <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight text-medical-blue-900 sm:text-5xl">
               Dott. Sergio Vaggi
@@ -42,7 +42,7 @@ export default function HomePage() {
               </Button>
             </div>
             <p className="mt-6 text-sm text-neutral-500">
-              Visite private a Genova (Voltri, Sampierdarena, Centro) e a Finale Ligure.
+              Visite private a Genova (Voltri, Sampierdarena, Centro).
               Interventi chirurgici anche in convenzione con il Servizio Sanitario Nazionale.
             </p>
           </div>
@@ -50,10 +50,10 @@ export default function HomePage() {
           <div className="lg:col-span-5">
             <div className="overflow-hidden rounded-3xl shadow-md">
               <Image
-                src="/images/vaggi-kmedical.jpg"
+                src="/images/vaggi-ritratto.webp"
                 alt="Dott. Sergio Vaggi, specialista in Ortopedia e Traumatologia"
-                width={800}
-                height={1200}
+                width={1083}
+                height={1453}
                 priority
                 className="h-auto w-full object-cover"
               />
@@ -94,9 +94,9 @@ export default function HomePage() {
       <section className="border-y border-medical-blue-100 bg-medical-blue-800" aria-label="Numeri e riconoscimenti">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 text-center sm:grid-cols-2 sm:px-6 lg:px-8">
           <div>
-            <p className="font-serif text-4xl font-semibold text-white">4</p>
+            <p className="font-serif text-4xl font-semibold text-white">{sedi.length}</p>
             <p className="mt-2 text-sm text-medical-blue-100">
-              Sedi di ricevimento privato tra Genova e Finale Ligure
+              Sedi di ricevimento privato a Genova
             </p>
           </div>
           <div>
@@ -137,12 +137,11 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl font-semibold text-medical-blue-900">Dove trovarmi</h2>
           <p className="mt-4 text-lg text-neutral-600">
-            Visite ambulatoriali a Genova Voltri, Genova Sampierdarena, Genova Centro e Finale
-            Ligure. Interventi chirurgici anche in convenzione con il Servizio Sanitario
-            Nazionale.
+            Visite ambulatoriali a Genova Voltri, Genova Sampierdarena e Genova Centro.
+            Interventi chirurgici anche in convenzione con il Servizio Sanitario Nazionale.
           </p>
         </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {sedi.map((sede) => (
             <SedeCard key={sede.id} sede={sede} />
           ))}

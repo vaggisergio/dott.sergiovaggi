@@ -194,10 +194,10 @@ export default function ChiSonoPage() {
           <div className="lg:col-span-4">
             <div className="mx-auto aspect-[3/4] w-full max-w-xs overflow-hidden rounded-3xl shadow-md lg:max-w-none">
               <Image
-                src="/images/vaggi-kmedical.jpg"
+                src="/images/vaggi-ritratto.webp"
                 alt="Ritratto del Dott. Sergio Vaggi"
-                width={800}
-                height={1200}
+                width={1083}
+                height={1453}
                 className="h-full w-full object-cover object-top"
               />
             </div>

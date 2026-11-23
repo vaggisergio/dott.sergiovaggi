@@ -19,7 +19,7 @@ export const metadata = {
     template: '%s | Dott. Sergio Vaggi',
   },
   description:
-    'Dott. Sergio Vaggi, specialista in Ortopedia e Traumatologia a Genova e Finale Ligure. Chirurgia protesica di anca, ginocchio e caviglia, chirurgia del piede e medicina rigenerativa.',
+    'Dott. Sergio Vaggi, specialista in Ortopedia e Traumatologia a Genova. Chirurgia protesica di anca, ginocchio e caviglia, chirurgia del piede e medicina rigenerativa.',
   keywords: [
     'ortopedico Genova',
     'chirurgo ortopedico Genova',
@@ -27,7 +27,6 @@ export const metadata = {
     'protesi ginocchio Genova',
     'protesi caviglia Genova',
     'chirurgia piede e caviglia Genova',
-    'ortopedico Finale Ligure',
     'ortopedico Voltri',
     'ortopedico Sampierdarena',
   ],
@@ -38,7 +37,7 @@ export const metadata = {
     siteName: 'Dott. Sergio Vaggi – Ortopedia e Traumatologia',
     title: 'Dott. Sergio Vaggi | Chirurgo Ortopedico a Genova',
     description:
-      'Specialista in Ortopedia e Traumatologia: chirurgia protesica di anca, ginocchio e caviglia, chirurgia del piede e medicina rigenerativa a Genova e Finale Ligure.',
+      'Specialista in Ortopedia e Traumatologia: chirurgia protesica di anca, ginocchio e caviglia, chirurgia del piede e medicina rigenerativa a Genova.',
     url: siteUrl,
   },
   robots: { index: true, follow: true },
@@ -55,7 +54,7 @@ const jsonLd = sedi.map((sede) => ({
     "Specialista in Ortopedia e Traumatologia. Chirurgia protesica dell'arto inferiore, chirurgia del piede e della caviglia, medicina rigenerativa.",
   url: `${siteUrl}/dove-trovarmi/#${sede.id}`,
   telephone: sede.telefonoHref || undefined,
-  areaServed: ['Genova', 'Finale Ligure', 'Liguria'],
+  areaServed: ['Genova', 'Liguria'],
   address: {
     '@type': 'PostalAddress',
     name: sede.struttura,

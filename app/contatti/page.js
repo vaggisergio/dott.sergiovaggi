@@ -4,7 +4,7 @@ import { dottore, sedi } from '@/lib/data'
 export const metadata = {
   title: 'Contatti e Richiesta Visita | Prenota una Visita Ortopedica',
   description:
-    'Prenota una visita ortopedica con il Dott. Sergio Vaggi a Genova o Finale Ligure: scegli online data, orario e sede, oppure contattaci telefonicamente.',
+    'Prenota una visita ortopedica con il Dott. Sergio Vaggi a Genova: scegli online data, orario e sede, oppure contattaci telefonicamente.',
   alternates: { canonical: '/contatti/' },
 }
 
@@ -23,7 +23,7 @@ export default function ContattiPage() {
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-neutral-700">
             Prenota direttamente online scegliendo data, orario e sede più comoda per te, a
-            Genova o a Finale Ligure.
+            Genova.
           </p>
         </div>
       </section>
